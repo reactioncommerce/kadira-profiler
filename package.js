@@ -2,7 +2,7 @@ Package.describe({
   "summary": "CPU Profiler for Meteor (used with Kadira)",
   "version": "1.3.0",
   "git": "https://github.com/meteorhacks/kadira-profiler.git",
-  "name": "akarshit:kadira-profiler"
+  "name": "reactioncommerce:kadira-profiler"
 });
 
 Package.onUse(function(api) {
@@ -24,7 +24,7 @@ function configurePackage(api) {
   api.use('random');
   api.use('meteorhacks:kadira@2.22.0');
   api.imply('meteorhacks:kadira@2.22.0');
-  api.use('akarshit:kadira-binary-deps@1.5.0');
+  api.use('reactioncommerce:kadira-binary-deps@1.5.0');
 
   api.add_files('lib/server.js', 'server');
   api.add_files('lib/client.js', 'client');
